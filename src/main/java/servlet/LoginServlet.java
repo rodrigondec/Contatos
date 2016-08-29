@@ -26,6 +26,7 @@ public class LoginServlet extends HttpServlet {
 			if(login.equals("admin") && senha.equals("admin")){
 				Usuario u = new Usuario(login, senha);
 				
+				request.getSession().setAttribute("usuario", u);
 				
 				response.sendRedirect("/app/cadastro.html");
 			}
