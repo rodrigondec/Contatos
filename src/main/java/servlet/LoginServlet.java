@@ -27,7 +27,7 @@ public class LoginServlet extends HttpServlet {
 				
 				request.getSession().setAttribute("usuario", u);
 				
-				response.sendRedirect("/app/cadastro.html");
+				response.sendRedirect("/app/auth/cadastro.html");
 			}
 			else{
 				response.sendRedirect("/app/login.html");
